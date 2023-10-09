@@ -7,7 +7,7 @@
 ### Context
 I have completed Unit 1 of APCSA which was primitives. I am now learning about objects (instances or copies of a class) in Unit 2.
 
-### Overview of the [Project Stem](https://projectstem.org/) Lessons
+### Overview of the Project Stem Lessons
 #### Lesson 1: Strings and Class Types
 There are two types of data types in Java:
 * primitive
@@ -129,3 +129,6 @@ There was a question from the Unit 2 test that made me hesistant. Here's the que
 I was stuck on the last and the second last option. I knew that `checkingAccount1` and `checkingAccount2` are objects. Objects could be mutable or immutable (can't change memory location) but, I don't remember if objects are the mutable ones or Strings (type of object) are the mutable ones. I decided to skip this question to come back later since I took quite a long time thinking about this. When I came back to this question, I remembered that objects are the mutable ones meaning Strings are the immutable ones. Since `checkingAccount1` and `checkingAccount2` are objects, both objects would be changing values. This would make the last option the correct answer.
 
 ### Takeaways
+* Go over the mistakes you've made in your exam/quizzes
+* Try to figure out why you've made that mistake
+* If you're stuck on a problem, you can come back later to try solve the problem
