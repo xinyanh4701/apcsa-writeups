@@ -8,6 +8,68 @@
 I am now in the 12th grade. I am taking APCSA (Java) for my senior year. For this unit topic, I am learning primitives (Unit 1). Primitives are a data type in Java that only holds one piece of data at a time. To help me learn more about data types, [Project Stem](https://projectstem.org/) is going to guide me through the APCSA curriculum.
 
 ### Overview
+#### Outputting Strings
+There are two ways to print a message in Java: `System.out.print()` and `System.out.println()`. `System.out.print()` prints a message while `System.out.println()` prints a message and then prints a blank line.
+
+#### Scanning Input
+`Scanner` is a class that helps us to take the input from the user and store that input into a variable.
+
+##### Scanner Format
+```java
+Scanner scan = new Scanner(System.in);
+```
+
+#### Adding Comments
+Comments in Java won't compile or run. Comments are used to help us remind ourselves of what this section of code does and many more. To create a single line comment, we use double forward slashes.
+```java
+// A single line comment looks like this
+```
+To create a multi line comment, we use `/*`(front of comment) and `*/`(end of comment).
+```java
+/*
+This
+is
+a
+multi
+line
+comment
+*/
+```
+
+#### Primitive Data Types
+In Java, there are several different types of primitive data types. Here is a list of them (this is not all of them):
+* int - integer value
+* double - stores decimal values
+* boolean - stores true or false
+* char - stores a single character
+
+#### Arithmetic Operators
+Arithmetic Operators help us do calculations in Java.
+##### Simple Arithmetic Operators
+* `+` - addition
+* `-` - subtraction
+* `*` - multiplication
+* `/` - division
+* `%` - returns the remainder of the division between two values
+##### Compound Arithmetic Operators
+* `+=` - add and then store
+* `-=` - subtract and then store
+* `*=` - multiply and then store
+* `/=` - divide and then store
+* `%=` - find the remainder and then store
+
+#### Casting
+Casting in Java means we can change a variable type from one to another. There are two casting conversions: `widening` and `narrowing`. `Widening` conversions converts a smaller data type to a larger data type. `Narrowing` conversions converts a larger data type to a smaller data type.
+
+An example of `widening` conversion:
+```java
+double x =  (double) 9 / 2;
+```
+An example of `narrowing` conversion:
+```java
+int x = (int) 53.35;
+```
+
 
 
 ### Challenges
