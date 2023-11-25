@@ -63,17 +63,17 @@ I took the Unit 4 exam to check my ability to understand loops. I got a lot of q
 
 #### Question 2
 <p align="center">
-    <img src="/workspaces/apcsa/apcsa-writeups/writeup-images/apcsa-mistake-13.png" width="70%" height="70%">
+    <img src="writeup-images/apcsa-mistake-13.png" width="70%" height="70%">
 </p>
 
 #### Question 4
 <p align="center">
-    <img src="/workspaces/apcsa/apcsa-writeups/writeup-images/apcsa-mistake-14.png" width="70%" height="70%">
+    <img src="writeup-images/apcsa-mistake-14.png" width="70%" height="70%">
 </p>
 
 #### Question 16
 <p align="center">
-    <img src="/workspaces/apcsa/apcsa-writeups/writeup-images/apcsa-mistake-15.png" width="70%" height="70%">
+    <img src="writeup-images/apcsa-mistake-15.png" width="70%" height="70%">
 </p>
 
 I didn't have enough time to work on question 16. I quickly chose one of the options.
@@ -82,7 +82,7 @@ Since this is a `while` loop, the loop can run either once or multiple times. Fi
 
 #### Question 19
 <p align="center">
-    <img src="/workspaces/apcsa/apcsa-writeups/writeup-images/apcsa-mistake-16.png" width="70%" height="70%">
+    <img src="writeup-images/apcsa-mistake-16.png" width="70%" height="70%">
 </p>
 
 For this question, I did the calculations correct but I didn't pay enough attention to understand what `result = str.substring(index, index + 1) + result;` meant.
@@ -95,7 +95,7 @@ The last condition that is true is when `5 is less than 6 (str.length())`. When 
 
 #### Question 20
 <p align="center">
-    <img src="/workspaces/apcsa/apcsa-writeups/writeup-images/apcsa-mistake-17.png" width="70%" height="70%">
+    <img src="writeup-images/apcsa-mistake-17.png" width="70%" height="70%">
 </p>
 
 For this question, I read `sum *= a` as `sum *= b`. We are not multiplying `sum` by `b` everytime `b` increments.
