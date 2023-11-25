@@ -66,10 +66,20 @@ I took the Unit 4 exam to check my ability to understand loops. I got a lot of q
     <img src="writeup-images/apcsa-mistake-13.png" width="70%" height="70%">
 </p>
 
+I wash confused with this question as I didn't have much time to spend on this question. I thought this algorithm `prints each character in str followed by an a` because I thought `System.out.print(str.substring(0,i));` prints every character and then an `a` would be printed in the end. However, this is not the case.
+
+I will use the example, `str = "banana"` to help me explain the reason why the correct answer was `prints each character in the string, str, except for the lowercase a's`. We start off with `int i = str.indexOf("a");`. Integer `i` has the value of 1 because `a` is first appeared in the first index. Then, we get into the while loop which is true since 1 is not -1. `System.out.print(str.substring(0,i));` will print out `b` because it is the index we want and the index we don't want. For `str = str.substring(i + 1);`, `String str` will now be `"nana"` because the substring tells us to start at (i + 1) all the way to the end and the index after `a` is the second index which contains the letter `n`. Now, integer `i` still has the value of 1 because `a` is first spotted at the first index. The process continues until `String str` is empty. The output would be: `bnn`. This leaves out all the lowercase `a`. 
+
 #### Question 4
 <p align="center">
     <img src="writeup-images/apcsa-mistake-14.png" width="70%" height="70%">
 </p>
+
+The question is asking us which statement would print out either `6`, `8`, `10`, `12`, or `14`. I chose `6 + (int) (8 * Math.random())` which was incorrect. `(int) (8 * Math.random())` would mean the number generator would print out either , `0`, `1`, `2`, `3`, `4`, `5`, `6`, or `7`. When you add either number to 6, there would still be odd numbers which is not what we are looking for.
+
+`6 + 2 * (int) (5 * Math.random())` is the correct answer. `(int) (5 * Math.random())` would give us `0`, `1`, `2, `3`, or `4`. When we multiply one of these numbers by 2 there would only be even numbers. When we multiply these numbers by 2, we get `0`, `2`, `4`, `6`, and `8`. If we add these numbers to 6, we would get `6`, `8`, `10`, `12`, and `14` which fits the question's criteria.
+
+`6 + 2 * (int) (4 * Math.random())` and `4 + 2 * (int) (5 * Math.random())` are similar to the correct answer but, are missing a number. `(int) (Math.random() * 14) - 6` would not make sense because if `Math.random()` generates a zero, the number would be negative which there are no negative numbers in the question's range.
 
 #### Question 16
 <p align="center">
@@ -78,7 +88,7 @@ I took the Unit 4 exam to check my ability to understand loops. I got a lot of q
 
 I didn't have enough time to work on question 16. I quickly chose one of the options.
 
-Since this is a `while` loop, the loop can run either once or multiple times. First, we look at the condition `x < 10 || (x % 4) != 0`. We can perform short circuit evaluation
+Since this is a `while` loop, the loop can run either once or multiple times. First, we look at the condition `x < 10 || (x % 4) != 0`. We can perform short circuit evaluation, skipping the second evulation if the first evaluation is true. Short circuit evaluation can only be use when there is an OR (`||`) operator. Starting at the value of 1, the condition is true updating `x` to have the value of 4. Now that `x` is equal to 4, the condition, `x < 10` is still true making `x` equal to 7. The condition still evaluates to true because 7 is less than 10 making `x` equal to 10. Now, the first condition evaluates to false because 10 is not less than 10. We have to look at the other condition, `(x % 4) != 0` to evaulate the whole condition as true. `(7 % 4)` equates to 3 which is not 0 so, this whole condition is true turning `x` into a 13. A tip I got from Mr. Mueller about the not equal operator (!=) is that instead of saying the `!=` operator as `not equal to`, remember this as `different from`. Now that `x` is 13, the condition, `x < 10` won't be true meaning we have to look into the second condition from now on to evaluate the entire condition. `(13 % 4)` equates to 1 which is different from 0. This would make `x` as 16. For the next condition, `(16 % 4)` equates to 0 which is not different from 0 stopping this `while` loop. The final value of `x` is 16.
 
 #### Question 19
 <p align="center">
@@ -119,3 +129,4 @@ a   b   sum
 ### Takeaways
 * If applicable, start with the last possible condition that is true
 * Truly understand what the line of code does before you try to find the answer
+* Think `!=` as different from instead of `not equal to`
