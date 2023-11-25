@@ -2,7 +2,7 @@
 ## Name: Xin Yan Huang
 ## Course: APCSA
 ## Period: 7
-## Concept: Objects (UNIT 3)
+## Concept: Conditionals (UNIT 3)
 
 ### Context
 I have finished Unit 2 of APCSA which was objects. I am now learning about conditionals in Unit 3. We use conditionals (using logical conditions) to help us perform different actions. An example would be if a number is greater than 10, perform this certain task and if a number is greater than 10, perform a different task.
@@ -23,7 +23,7 @@ Relational Operators are used to check if a primitive or reference value is larg
 * `<=` - Less than or equal to
 * `>` - Greater than
 * `>=` - Greater than or equal to
-* `!=` - Not equal to 
+* `!=` - Not equal to
 
 #### `else` Statements
 `else` statements are executed when an `if` statement is false.
@@ -83,7 +83,7 @@ I didn't really spend enough time to answer this question. My answer, `true only
 ```java
 (true || false) || !(true && false)
 ```
-We will look at `(true || false)` first. In this condition, it will return a `true` value because when either value is `true`, the condition is true. Now, we don't have to look at `!(true && false)` because since `(true || false)` is true, then the whole expression is true. The reason is the second `||` operator compares the two conditions `(true || false)` and `!(true && false)`. Since this is an `or` operator, that means either condition can be true to evaluate this expression as true. Since we have a `true` value already, there's no need to compare the second condition. 
+We will look at `(true || false)` first. In this condition, it will return a `true` value because when either value is `true`, the condition is true. Now, we don't have to look at `!(true && false)` because since `(true || false)` is true, then the whole expression is true. The reason is the second `||` operator compares the two conditions `(true || false)` and `!(true && false)`. Since this is an `or` operator, that means either condition can be true to evaluate this expression as true. Since we have a `true` value already, there's no need to compare the second condition.
 
 Here's another question:
 <p align="center">
@@ -112,7 +112,7 @@ If we combine these outputs together, the result would be:
 ```java
 yes no yes
 ```
-My answer was `no no yes`. When I read the first `if` statement, I read the condition as `a == b` which gave me the answer as `no` for the first condition. I didn't look carefully which ultimately cost me a question. 
+My answer was `no no yes`. When I read the first `if` statement, I read the condition as `a == b` which gave me the answer as `no` for the first condition. I didn't look carefully which ultimately cost me a question.
 
 Going over the questions has definitely helped me understand the mistakes I made during the time when I didn't know exactly what these questions were looking for. It has made me more knowledgeable about the content.
 
