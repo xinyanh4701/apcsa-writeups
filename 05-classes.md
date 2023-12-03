@@ -101,7 +101,7 @@ On the Unit 5 test, I got four questions wrong. I am going over these questions 
     <img src="writeup-images/apcsa-mistake-21.png" width="70%">
 </p>
 
-For the first question I got wrong, I clearly did not look at the question carefully. The question is asking to the find the answer choice that is **not true**. I chose the answer choice that is true. I immediately looked at this answer choice thinking this was the correct answer. The answer choice, `All methods should be declared private.` is the correct answer because if we look back at the examples of methods, they are not `private` but, `public`. Private methods are used when you do not want the method to be accessed by another class. The word, `All` also gives the answer away because
+For the first question I got wrong, I clearly did not look at the question carefully. The question is asking to the find the answer choice that is **not true**. I chose the answer choice that is true. I immediately looked at this answer choice thinking this was the correct answer. The answer choice, `All methods should be declared private.` is the correct answer because if we look back at the examples of methods, they are not `private` but, `public`. Private methods are used when you do not want the method to be accessed by another class. The word, `All` also gives the answer away because there are some methods that are public which contradicts this option. A good way to tackle these problems is to find a way that contradict the answer choice.
 
 #### Question 4
 <p align="center">
@@ -127,4 +127,4 @@ For question 18, I was comtemplating because all answers might be true. I chose 
 ### Takeaways
 * Do not rush answering a question
 * Find the option that is most efficient
-*
+* Find a solution that contridicts an answer choice
