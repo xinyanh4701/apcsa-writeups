@@ -5,7 +5,7 @@
 ## Concept: Loops (UNIT 4)
 
 ### Context
-I have finished Unit 4 of APCSA which was conditionals. I am now learning loops in Unit 4. Loops are a code of block that perform the same exact instructions until a condition prevents the loop from continuing to run. Loops are helpful because we don't have to write the same block of code repeatedly. There are three types of loops that I will be talking about today: `for loop`, `while loop`, and a nested loop.
+I have finished Unit 3 of APCSA which was conditionals. I am now learning loops in Unit 4. Loops are a code of block that perform the same exact instructions until a condition prevents the loop from continuing to run. Loops are helpful because we don't have to write the same block of code repeatedly. There are three types of loops that I will be talking about today: `for loop`, `while loop`, and a nested loop.
 ### Overview
 #### `while` Loop
 `While` loops execute the block of code inside until the condition is not met.
@@ -68,7 +68,7 @@ I took the Unit 4 exam to check my ability to understand loops. I got a lot of q
 
 I wash confused with this question as I didn't have much time to spend on this question. I thought this algorithm `prints each character in str followed by an a` because I thought `System.out.print(str.substring(0,i));` prints every character and then an `a` would be printed in the end. However, this is not the case.
 
-I will use the example, `str = "banana"` to help me explain the reason why the correct answer was `prints each character in the string, str, except for the lowercase a's`. We start off with `int i = str.indexOf("a");`. Integer `i` has the value of 1 because `a` is first appeared in the first index. Then, we get into the while loop which is true since 1 is not -1. `System.out.print(str.substring(0,i));` will print out `b` because it is the index we want and the index we don't want. For `str = str.substring(i + 1);`, `String str` will now be `"nana"` because the substring tells us to start at (i + 1) all the way to the end and the index after `a` is the second index which contains the letter `n`. Now, integer `i` still has the value of 1 because `a` is first spotted at the first index. The process continues until `String str` is empty. The output would be: `bnn`. This leaves out all the lowercase `a`. 
+I will use the example, `str = "banana"` to help me explain the reason why the correct answer was `prints each character in the string, str, except for the lowercase a's`. We start off with `int i = str.indexOf("a");`. Integer `i` has the value of 1 because `a` is first appeared in the first index. Then, we get into the while loop which is true since 1 is not -1. `System.out.print(str.substring(0,i));` will print out `b` because it is the index we want and the index we don't want. For `str = str.substring(i + 1);`, `String str` will now be `"nana"` because the substring tells us to start at (i + 1) all the way to the end and the index after `a` is the second index which contains the letter `n`. Now, integer `i` still has the value of 1 because `a` is first spotted at the first index. The process continues until `String str` is empty. The output would be: `bnn`. This leaves out all the lowercase `a`.
 
 #### Question 4
 <p align="center">
