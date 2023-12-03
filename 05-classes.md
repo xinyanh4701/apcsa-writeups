@@ -96,35 +96,35 @@ Format:
 ### Challenges
 On the Unit 5 test, I got four questions wrong. I am going over these questions to help me learn and understand my mistakes.
 
-#### Question
+#### Question 2
 <p align="center">
     <img src="writeup-images/apcsa-mistake-21.png" width="70%">
 </p>
 
 For the first question I got wrong, I clearly did not look at the question carefully. The question is asking to the find the answer choice that is **not true**. I chose the answer choice that is true. I immediately looked at this answer choice thinking this was the correct answer. The answer choice, `All methods should be declared private.` is the correct answer because if we look back at the examples of methods, they are not `private` but, `public`. Private methods are used when you do not want the method to be accessed by another class. The word, `All` also gives the answer away because
 
-#### Question
+#### Question 4
 <p align="center">
     <img src="writeup-images/apcsa-mistake-22.png" width="70%">
 </p>
 
 For this question, I was hesitant between my answer choice and `Lamp.toggle();`. Both of these answer choices would work for their uses. I did not know which option would be for calling from another class during the time of the test. The reason why `Lamp.toggle();` is correct is because the `toggle()` method is static meaning this method only belongs to the Lamp class. If another class calls this method, there would be an error as only the Lamp class can access this method. In order for another class to access the `toggle()` method, the other class needs to call the Lamp class to call the `toggle()` method. It should look like this: `classofthemethod.toggle()` which in this case is `Lamp.toggle()`.
 
-#### Question
+#### Question 8
 <p align="center">
     <img src="writeup-images/apcsa-mistake-23.png" width="70%>
 </p>
 
-In my opinion, this question has two technically right answers. One of the answers which I picked was marked as wrong. The objective of this question is to find the condition that will return `b` as the maximum value. The first option that I see, `(c > a) && (c > b)`, is incorrect because this condition checks if `c` is the maximum value not `b`. Option, `(a > c) && (b > c)`, does not really make sense because it is checking if `c` is the minimum value. We are not looking for minimum values. Option, `(b > c) && (c > a)`, is checking if value, `c`, is the middle value, not the maximum and not the minimum value. Option, `b > c` was the test's right answer because if `a` is not the maximum, we only have to check if `b` or `c` is the maximum. For the `else if` statement, we want to return `b` as the maximum value so, `b` would have to be greater than `c`. I am not sure why my answer, `(b > a) && (b > c)` is the wrong answer when it is technically correct. One reason I can think of is that my answer choice is not the most efficient.
+In my opinion, this question has two technically right answers. One of the answers which I picked was marked as wrong. The objective of this question is to find the condition that will return `b` as the maximum value. The first option that I see, `(c > a) && (c > b)`, is incorrect because this condition checks if `c` is the maximum value not `b`. Option, `(a > c) && (b > c)`, does not really make sense because it is checking if `c` is the minimum value. We are not looking for minimum values. Option, `(b > c) && (c > a)`, is checking if value, `c`, is the middle value, not the maximum and not the minimum value. Option, `b > c` was the test's right answer because if `a` is not the maximum, we only have to check if `b` or `c` is the maximum. For the `else if` statement, we want to return `b` as the maximum value so, `b` would have to be greater than `c`. I am not sure why my answer, `(b > a) && (b > c)` is the wrong answer when it is technically correct. One reason I can think of is that my answer choice is not the most efficient. Next time, I should consider which answer choice would be more efficient if two answer look like they are the answers.
 
-#### Question
+#### Question 18
 <p align="center">
     <img src="writeup-images/apcsa-mistake-24.png" width="70%">
 </p>
 
-
+For question 18, I was comtemplating because all answers might be true. I chose `open() must return a value.` because I thought returning a value meant returning a boolean so if a Book object is open, then the boolean should be true. After going over this problem, I realized that most of the options have the word, `must`. This word makes every option say that we need `open()` to exactly be this which is false. The word, `must` is kind of saying like `needs`. `open()` does not need to be void, return a value, be declared private, or be declared static.
 
 ### Takeaways
 * Do not rush answering a question
-*
+* Find the option that is most efficient
 *
