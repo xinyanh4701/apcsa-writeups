@@ -19,7 +19,7 @@ Process Writeup
 
 
 <p align="center">
-<img src="writeup-images/apcsa-mistake-26.png" width="70%" height="70%">
+<img src="writeup-images/apcsa-mistake-26.png" width="60%" height="60%">
 </p>
 
 
@@ -29,7 +29,7 @@ Process Writeup
 
 
 <p align="center">
-<img src="writeup-images/apcsa-mistake-28.png" width="70%">
+<img src="writeup-images/apcsa-mistake-28.png" width="70%" height="70%">
 </p>
 
 
