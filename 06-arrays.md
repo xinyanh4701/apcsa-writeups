@@ -37,16 +37,6 @@ numbers[4] = 4; // the array should look like this: 1 2 3 4 4 6
 ```
 I assigned the fourth element or index to the value of 4. The fourth index originally had the value of 5 but, it has been replaced by the value of 4.
 
-#### Insertion
-
-
-#### Deletion
-
-
-
-#### Shifting Elements (Right or Left)
-
-
 #### Printing Using an Enhanced For Loop
 
 
@@ -58,7 +48,7 @@ For the Unit 6 exam, I gotten 4 questions wrong. I am going over these questions
 <img src="writeup-images/apcsa-mistake-25.png" width="70%">
 </p>
 
-For the first question, I wasn't completely sure what the question was asking. I do know that the method `s()` returns an array of String. The only options I am left is `return {"apple", "banana", "orange"};` and `return new String[] {"apple", "banana", "orange"};`. I chose the first option because I thought `words` already had an array with values. However, my assumption turned into a mistake. `String[] words` didn't actually have an array with values mentioned. You would need to return a new String array because
+For the first question, I wasn't completely sure what the question was asking. I do know that the method `s()` returns an array of String. The only options I am left is `return {"apple", "banana", "orange"};` and `return new String[] {"apple", "banana", "orange"};`. I chose the first option because I thought `words` already had an array with values. However, my assumption turned into a mistake. `String[] words` didn't actually have an array with values mentioned. You would need to return a new String array because you want `words` to have an array of values you specifically want and changing the values of each element is more difficult to do. 
 
 
 <p align="center">
@@ -71,16 +61,17 @@ For question 3, the question is asking us to find the code that will print the i
 <img src="writeup-images/apcsa-mistake-27.png" width="70%">
 </p>
 
-For question 8, this is the question that I should have not gotten wrong. I first originally chose the incorrect answer, `Returns true if each element of the array is greater than the element after`. Then, I went to work on the other questions as I had more difficulty solving those questions. Next, I came back to this question to spend more time because I knew my answer choice was wrong. We first look at the condition, `nums[i] < nums[i - 1]`. The current element has to be less than the previous element in order for this condition to be true. The answer choice should contain `greater than the element after.` If we look at the options, there is only two options. The option that I chose was incorrect. I didn't change the answer
+For question 8, this is the question that I should have not gotten wrong. I didn't change the answer when I submitted this exam. I first originally chose the incorrect answer, `Returns true if each element of the array is greater than the element after`. Then, I went to work on the other questions as I had more difficulty solving those questions. Next, I came back to this question to spend more time because I knew my answer choice was wrong. We first look at the condition, `nums[i] < nums[i - 1]`. The current element has to be less than the previous element in order for this condition to be true. The answer choice should contain at least a `less than`. If we look at the options, there is only two options. The options are `Returns true if each element of the array is less than or equal to the element after.` and `Returns true if each element of the array is less than the element after`.
 
 <p align="center">
 <img src="writeup-images/apcsa-mistake-28.png" width="70%" height="70%">
 </p>
 
-For question 16, I didn't spend enough time to answer this question clearly. I now have more time to notice my mistake. My answer choice was a random option that I chose. My answer says `The index of the last element in the array before position n which has the same value as the element at position n` which is incorrect because inside the condition, `result` would have been assigned to `k - 1` in order to return the index of the element before position `n`. 
+For question 16, I didn't spend enough time to answer this question clearly. I now have more time to notice my mistake. My answer choice was a random option that I chose. My answer says `The index of the last element in the array before position n which has the same value as the element at position n` which is incorrect because inside the condition, `result` would have been assigned to `k - 1` in order to return the index of the element before position `n`. The other option like `The value of the element at position n.` is incorrect because `result` holds the index value not the value of the element. The third option which is `The index of the first element in the array which has the same value as the element position n.` is also incorrect because if there is another element of the array after the first element that has the same value as the element at position `n`, the variable `result` would assign that index. I wish that I have spent more time in this question instead of the others.
 
 ### Takeaways
 * Always look at the entire answer choice before deciding which answer choice to choose from
+* Use your time wisely
 *
 
 
