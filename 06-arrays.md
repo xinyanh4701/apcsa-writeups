@@ -77,6 +77,7 @@ For question 8, this is the question that I should have not gotten wrong. I firs
 <img src="writeup-images/apcsa-mistake-28.png" width="70%" height="70%">
 </p>
 
+For question 16, I didn't spend enough time to answer this question clearly. I now have more time to notice my mistake. My answer choice was a random option that I chose. My answer says `The index of the last element in the array before position n which has the same value as the element at position n` which is incorrect because inside the condition, `result` would have been assigned to `k - 1` in order to return the index of the element before position `n`. 
 
 ### Takeaways
 * Always look at the entire answer choice before deciding which answer choice to choose from
