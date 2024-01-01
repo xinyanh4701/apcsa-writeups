@@ -38,9 +38,20 @@ numbers[4] = 4; // the array should look like this: 1 2 3 4 4 6
 I assigned the fourth element or index to the value of 4. The fourth index originally had the value of 5 but, it has been replaced by the value of 4.
 
 #### Printing Using an Enhanced For Loop
+Here's the format of an *enhanced for loop*:
+```java
+for (int num : nums){
+    // code here
+}
+```
+Inside the parenthesis, `int` is the type of array while `num` is the name we are going to call for each element in the `nums` array. *Enhanced for loop* basically means for each element of type array, execute this block of code. Here is an example:
+```java
+int[] numbers = {1, 2, 3, 4, 5, 6};
 
-
-
+for (int num : numbers){
+    System.out.print(num + " "); // should print out 1 2 3 4 5 6
+}
+```
 ### Challenges
 For the Unit 6 exam, I gotten 4 questions wrong. I am going over these questions to clarify why my answers were wrong.
 
@@ -48,7 +59,7 @@ For the Unit 6 exam, I gotten 4 questions wrong. I am going over these questions
 <img src="writeup-images/apcsa-mistake-25.png" width="70%">
 </p>
 
-For the first question, I wasn't completely sure what the question was asking. I do know that the method `s()` returns an array of String. The only options I am left is `return {"apple", "banana", "orange"};` and `return new String[] {"apple", "banana", "orange"};`. I chose the first option because I thought `words` already had an array with values. However, my assumption turned into a mistake. `String[] words` didn't actually have an array with values mentioned. You would need to return a new String array because you want `words` to have an array of values you specifically want and changing the values of each element is more difficult to do. 
+For the first question, I wasn't completely sure what the question was asking. I do know that the method `s()` returns an array of String. The only options I am left is `return {"apple", "banana", "orange"};` and `return new String[] {"apple", "banana", "orange"};`. I chose the first option because I thought `words` already had an array with values. However, my assumption turned into a mistake. `String[] words` didn't actually have an array with values mentioned. You would need to return a new String array because you want `words` to have an array of values you specifically want and changing the values of each element is more difficult to do.
 
 
 <p align="center">
