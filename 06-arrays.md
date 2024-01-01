@@ -83,6 +83,6 @@ For question 16, I didn't spend enough time to answer this question clearly. I n
 ### Takeaways
 * Always look at the entire answer choice before deciding which answer choice to choose from
 * Use your time wisely
-*
+* Always update your answer choice before submitting
 
 
