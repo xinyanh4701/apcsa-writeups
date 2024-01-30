@@ -23,3 +23,6 @@ I was previously working on arrays which is Unit 6 of the APCSA cirriculumn. Now
 </p>
 
 ### Takeaways
+* Focus more on the questions you have a higher chance of getting a question right on
+* Don't panic too much
+* Spend some time to get a little understanding of a problem
