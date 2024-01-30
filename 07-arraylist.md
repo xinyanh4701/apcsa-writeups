@@ -2,11 +2,14 @@ Process Writeup
 ## Name: Xin Yan Huang
 ## Course: APCSA
 ## Period: 7
-## Concept: ArrayList (UNIT 6)
+## Concept: ArrayLists (UNIT 6)
 
 ### Context
+I was previously working on arrays which is Unit 6 of the APCSA cirriculumn. Now, I am on Unit 7 which is ArrayLists. ArrayList is similar to the array but, there is a major difference. In arrays, you can not change the size of the array. Once you initialize the maximum amount of elements you want to put in an array, you can not add more elements. On the other hand, an `ArrayList` can be resized to any amount you want. You can add an element in the `ArrayList` by using the `add()` method. To initialize an `ArrayList`, you start off typing `ArrayList`. Then, you would type the data type you want the `ArrayList` to hold. This needs to be wrapped in angled brackets, `<>`. It should look this this as of right now: `ArrayList<Integer>`. After this, you create a name for the `ArrayList` and set it to a new `ArrayList` of the data type you want. Here's what it would look like: `ArrayList<Integer> nums = new ArrayList<Integer>();`.
 
 ### Challenges
+
+**This is a long image**
 <p align="center">
 <img src="writeup-images/apcsa-mistake-30.png" width="70%" height="50%">
 </p>
