@@ -14,13 +14,19 @@ I was previously working on arrays which is Unit 6 of the APCSA cirriculumn. Now
 <img src="writeup-images/apcsa-mistake-30.png" width="70%" height="50%">
 </p>
 
+For question 19 of the exam, I didn't have enough time to answer this question.
+
 <p align="center">
 <img src="writeup-images/apcsa-mistake-31.png" width="70%" height="60%">
 </p>
 
+For this question, I also didn't have enough time to answer it.
+
 <p align="center">
 <img src="writeup-images/apcsa-mistake-32.png" width="70%" height="70%">
 </p>
+
+For this question, I should have spent a little more time since I had a better chance getting this correct. 
 
 ### Takeaways
 * Focus more on the questions you have a higher chance of getting a question right on
