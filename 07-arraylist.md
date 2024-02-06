@@ -26,9 +26,9 @@ For this question, I also didn't have enough time to answer it.
 <img src="writeup-images/apcsa-mistake-32.png" width="70%" height="70%">
 </p>
 
-For this question, I should have spent a little more time since I had a better chance getting this correct. The line, `musicGenre.set(1, musicGenre.remove(1)));` confused me. The `.remove()` method means that you are returning the element that you are removing. When you put `.remove()` inside the `.add()` method, you would add the specific element to the end of the ArrayList. However, I found out that when the method is inside the `.set()` method, the element will actually be removed.
+For this question, I should have spent a little more time since I had a better chance getting this correct. The line, `musicGenre.set(1, musicGenre.remove(1)));` confused me. The `.remove()` method means that you are removing an element off the ArrayList. When you put `.remove()` inside the `.add()` method, you would add the removed element to the end of the ArrayList. However, I found out that when the method is inside the `.set()` method, the element will be overridden by another element.
 
-First, the musicGenre ArrayList will have `jazz`. Second, `rocknRoll` would be added at the end of the ArrayList. Third, `hipHop` would be added. Fourth, `rocknRoll` would be removed and be added to the end of the ArrayList. 
+First, the musicGenre ArrayList will have `jazz`. Second, `rocknRoll` would be added at the end of the ArrayList. Third, `hipHop` would be added. Fourth,
 
 ### Takeaways
 * Focus more on the questions you have a higher chance of getting a question right on
