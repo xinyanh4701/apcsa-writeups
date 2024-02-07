@@ -14,7 +14,14 @@ I was previously working on arrays which is Unit 6 of the APCSA cirriculumn. Now
 <img src="writeup-images/apcsa-mistake-30.png" width="70%" height="50%">
 </p>
 
-For question 19 of the exam, I didn't have enough time to answer this question.
+For question 19 of the exam, I didn't have enough time to answer this question. I was just clicking a random answer choice. Now that I have more time to think about it, I see why my answer choice was incorrect.
+
+The `combiList()` method calls out the `removeDupes()` method which also calls out the `isIn()` method to check if there are any duplicates. The `removeDupes()` method adds only elements that don't have a duplicate. The `removeDupes()` and `isIn()` method will only check and remove for one method. You can't remove and check different ArrayLists at the same time. When you combine these ArrayLists that have been checked for duplicates, you run the possibility of having duplicates. This is because one Arraylist might have the same element as another ArrayList. If you run the methods again to check if the combined ArrayList has any duplicates, there shouldn't be a duplicate after that. If you look at the answer choices, most of the options have a duplicate on an ArrayList which makes the combiList method to look like there isn't a bug. However this option contradicts the combiList method:
+```java
+list1 = ["pick", "key", "lock"]
+list2 = ["anvil", "pick", "steel"]
+```
+Since `pick` is on both ArrayLists and only the `isIn()` method and `removeDupes()` method only check at specifically one ArrayList. When you combine these lists together, you would get this: `pick, key, lock, anvil, pick, steel`. There is a duplicate which is `pick`.
 
 <p align="center">
 <img src="writeup-images/apcsa-mistake-31.png" width="70%" height="60%">
@@ -22,13 +29,15 @@ For question 19 of the exam, I didn't have enough time to answer this question.
 
 For this question, I also didn't have enough time to answer it.
 
+
+**This is another long image**
 <p align="center">
 <img src="writeup-images/apcsa-mistake-32.png" width="70%" height="70%">
 </p>
 
 For this question, I should have spent a little more time since I had a better chance getting this correct. The line, `musicGenre.set(1, musicGenre.remove(1)));` confused me. The `.remove()` method means that you are removing an element off the ArrayList. When you put `.remove()` inside the `.add()` method, you would add the removed element to the end of the ArrayList. However, I found out that when the method is inside the `.set()` method, the element will be overridden by another element.
 
-First, the musicGenre ArrayList will have `jazz`. Second, `rocknRoll` would be added at the end of the ArrayList. Third, `hipHop` would be added. Fourth,
+First, the musicGenre ArrayList will have `jazz`. Second, `rocknRoll` would be added at the end of the ArrayList. Third, `hipHop` would be added. Fourth, `rocknRoll` would be removed to be added at the end of the ArrayList. `hipHop` would shift to the index of one. Right now, `rocknRoll` would be at the index of two. The next line, `musicGenre.set(1, musicGenre.remove(1));` is where an element would be overridden. The element at the first index would be removed due to `musicGenre.remove(1)` which is `hipHop`. This would shift `rocknRoll` to the position of index 1. The `.set()` method would make `hipHop` override `rocknRoll` which gives us the answer of `[jazz, hipHop]`.
 
 ### Takeaways
 * Focus more on the questions you have a higher chance of getting a question right on
