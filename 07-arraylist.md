@@ -23,6 +23,12 @@ list2 = ["anvil", "pick", "steel"]
 ```
 Since `pick` is on both ArrayLists and only the `isIn()` method and `removeDupes()` method only check at specifically one ArrayList. When you combine these lists together, you would get this: `pick, key, lock, anvil, pick, steel`. There is a duplicate which is `pick`.
 
+**This is another long image**
+<p align="center">
+<img src="writeup-images/apcsa-mistake-31.png" width="70%" height="60%">
+</p>
+
+For this question, I also didn't have enough time to answer it. The question was asking what changes would be made so that the sort method sort the integers in descending order (from greatest to least).
 
 
 <p align="center">
