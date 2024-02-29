@@ -27,13 +27,13 @@ The only correct answer was option `II`. Since we are looking to see if all elem
 #### Question 17
 
 <p align="center">
-    <img src="writeup-images/apcsa-mistake-34.png" width="70" height="70%">
+    <img src="writeup-images/apcsa-mistake-34.png" width="705" height="70%">
 </p>
 
 #### Question 20
 
 <p align="center">
-    <img src="/workspaces/apcsa/apcsa-writeups/writeup-images/apcsa-mistake-35.png" width="70%" height="70%">
+    <img src="writeup-images/apcsa-mistake-35.png" width="70%" height="70%">
 </p>
 
 
