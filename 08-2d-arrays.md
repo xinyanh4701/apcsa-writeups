@@ -24,11 +24,23 @@ I was now down to two options, `I` and `II`. I didn't understand the question we
 
 The only correct answer was option `II`. Since we are looking to see if all elements have the length of 3, we can just write code that returns `false` if only one element doesn't have the length of 3.
 
-#### Question 17
+#### Question 18
 
 <p align="center">
     <img src="writeup-images/apcsa-mistake-34.png" width="705" height="70%">
 </p>
+
+For this question, I just randomly guessed as I didn't have enough time to complete this question. I wish that I didn't spend more time on questions that I got very confused so that I can spend more time on questions that I could get correct if I had the time. I think this is a much more simplier question than the questions that I got wrong. The question is saying that we return the index of the coloumn that has the smallest value in the 2d array. My answer choice was definitely wrong as `currentVal` is suppose to hold the value of the specific element in the 2d array. In my case, `currentVal` holds the index of the row. The variable, `result`, is suppose to hold the index of the coloumn. However, the `result` in my answer choice holds the value of the element.
+
+The correct is:
+```java
+if (mat[j][k] < currentVal)
+{
+  currentVal = mat[j][k];
+  result = k;
+}
+```
+The `currentVal` actually stores the value of the element so we can later compare the new `currentVal` to other element's value. The `result` actually holds the value of the index of the column. `result` is being stored by the information from `k` because `k` is the index of the column. `j` is the index of the row. This is because the outer `for()` loop loops through each row which has the variable `j`. The inner `for()` loop loops through each column which has the variable `k`.
 
 #### Question 20
 
@@ -49,4 +61,4 @@ On the line that says, `for (double num : mat[k])`, it means that we are in the 
 ### Takeaways
 * Take time to read the question more carefully
 * Put in a little extra time to make sure you get the question correct
-* 
+* Spend more time on questions that have a higher chance of getting it correct
