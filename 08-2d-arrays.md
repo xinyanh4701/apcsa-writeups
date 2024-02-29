@@ -36,7 +36,17 @@ The only correct answer was option `II`. Since we are looking to see if all elem
     <img src="writeup-images/apcsa-mistake-35.png" width="70%" height="70%">
 </p>
 
+This question caught me off guard. I should have look into the answer choices more carefully but, it is hard trying to figure out the answer in a short period of time. I forgot that `num` was a `double` variable type. My answer choice was wrong because `mat[k][num]` meant `mat[int][double]`. This is incorrect as there are no indexes that are double meaning you can't have an index of 3.23. Indexes are always whole numbers (0, 1, 2, 3, etc). With this logic, we can eliminate the rest of the options that have `[num]` since this is incorrect syntax. The correct answer was:
+```java
+if (num < localMin)
+{
+  localMin = num;
+}
+```
+On the line that says, `for (double num : mat[k])`, it means that we are in the kth row of nth column which is basically saying we are accessing an element from this column of that row. We don't need to call the element by saying `mat[k][#]` since we are accessing elements in a for-each loop. This means that we can eliminate any option that has `mat[k][num]` or `mat[num]` in the condition. This would leave us to only looking at the inside of the condition. The other option that has `localMin = mat[k][num]` would be incorrect as you can't have an index with a `double` (decimal) value.
 
 
 ### Takeaways
 * Take time to read the question more carefully
+* Put in a little extra time to make sure you get the question correct
+* 
