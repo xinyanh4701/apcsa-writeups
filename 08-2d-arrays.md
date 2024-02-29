@@ -6,7 +6,7 @@
 ## Concept: Unit 8
 
 ### Context
-Previously, I was working on ArrayLists which is similar to arrays. Now, I am working on Unit 8 of the APCSA cirriculmn which is 2D Array. 2d means 2 dimensional. 2d arrays are similar to a regular array. The difference is that 2d arrays are an array inside of an array. This is how you would initialize a 2d array: `int[][] nums = new int[2][3];`. While an array has one square bracket after the array type, a 2d array has two square brackets.
+Previously, I was working on ArrayLists which is similar to arrays. Now, I am working on Unit 8 of the APCSA cirriculmn which is 2D Array. 2D means 2 dimensional. 2D arrays are similar to a regular array. The difference is that 2D arrays are an array inside of an array. This is how you would initialize a 2D array: `int[][] nums = new int[2][3];`. While an array has one square bracket after the array type, a 2D array has two square brackets.
 
 ### Challenges
 
@@ -16,7 +16,7 @@ Previously, I was working on ArrayLists which is similar to arrays. Now, I am wo
     <img src="writeup-images/apcsa-mistake-33.png" width="70%" height="70%">
 </p>
 
-For this question, the question is asking you to return `true` if all Strings in the 2d array have the length of 3. There can't be a single `String` that doesn't have the length of 3 or otherwise, we return false.
+For this question, the question is asking you to return `true` if all strings in the 2D array have the length of 3. There can't be a single `String` that doesn't have the length of 3 or otherwise, we return false.
 
 When taking upon a closer look at all three options, I eliminated `III` first because you have to return a value outside of the `for()` loop. In addition, the line that says, `return result;`, is inside the first `for()` loop. Hypotethically, if the first row of elements all have the length of 3, they would return as `true`. However, the code doesn't take into consideration about the rest of the elements in other rows. When you return a value inside a `for()` loop, the `for()` loop stops executing. Now that we stopped the `for()` loop, the rest of the elements in the other rows could not have the length of 3 which could make the boolean spit out false information.
 
@@ -30,7 +30,7 @@ The only correct answer was option `II`. Since we are looking to see if all elem
     <img src="writeup-images/apcsa-mistake-34.png" width="705" height="70%">
 </p>
 
-For this question, I just randomly guessed as I didn't have enough time to complete this question. I wish that I didn't spend more time on questions that I got very confused so that I can spend more time on questions that I could get correct if I had the time. I think this is a much more simplier question than the questions that I got wrong. The question is saying that we return the index of the coloumn that has the smallest value in the 2d array. My answer choice was definitely wrong as `currentVal` is suppose to hold the value of the specific element in the 2d array. In my case, `currentVal` holds the index of the row. The variable, `result`, is suppose to hold the index of the coloumn. However, the `result` in my answer choice holds the value of the element.
+For this question, I just randomly guessed as I didn't have enough time to complete this question. I wish that I didn't spend more time on questions that I got very confused so that I can spend more time on questions that I could get correct if I had the time. I think this is a much more simplier question than the questions that I got wrong. The question is saying that we return the index of the coloumn that has the smallest value in the 2D array. My answer choice was definitely wrong as `currentVal` is suppose to hold the value of the specific element in the 2D array. In my case, `currentVal` holds the index of the row. The variable, `result`, is suppose to hold the index of the coloumn. However, the `result` in my answer choice holds the value of the element.
 
 The correct is:
 ```java
