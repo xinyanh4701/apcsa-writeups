@@ -3,7 +3,7 @@
 ## Name: Xin Yan Huang
 ## Course: APCSA
 ## Period: 7
-## Concept: Unit 8
+## Concept: 2D-Arrays (UNIT 8)
 
 ### Context
 Previously, I was working on ArrayLists which is similar to arrays. Now, I am working on Unit 8 of the APCSA cirriculmn which is 2D Array. 2D means 2 dimensional. 2D arrays are similar to a regular array. The difference is that 2D arrays are an array inside of an array. This is how you would initialize a 2D array: `int[][] nums = new int[2][3];`. While an array has one square bracket after the array type, a 2D array has two square brackets.
