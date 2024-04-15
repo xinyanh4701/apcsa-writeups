@@ -6,7 +6,7 @@
 ## Concept: Recursion (UNIT 10)
 
 ### Context
-In this unit, we are learning about recursion. In short, recursion involves with a method inside a method. Recursion can be coded in loops but, it is more mainstream to see recursion in a method inside of a method.
+In this unit, we are learning about recursion. In short, recursion involves a method within a method. Recursion can be coded in loops, but it is more mainstream to see recursion in a method inside of a method.
 
 ### Challenges
 
@@ -80,7 +80,7 @@ If we take 6 for example, the code should have returned 6 since 6 is the largest
 <img src="writeup-images/apcsa-mistake-45.png" width="70%" height="70%">
 </p>
 
-For this question, I messed up with the steps. I ended up with 4 which was not the answer. I was writing all over the paper which was difficult to see the table. I will definitely to keep in mind to stay more organized. Anyways, after creating a table, our first step is to compare `vals.get(mid).intValue() < num` which is true since 4 is less than 5. Next, we run the code inside that conditional which we set `low` to `mid + 1` which is 4. Then, we run the while loop again. This time, `high` is still greater than `low` so, we set `mid` to 5 and run the `if` condition again. Now, we run the next condition because the value of the ArrayList at index 5 is 8 which is bigger than 5, the `num`. That means `high` would be set to the value of 5. Afterwards, we run the while loop again which we have to set `mid` to 4 since (4 + 5) / 2 is 4 in integer form. Next, we run the `if` condition again which is true because the value at index 4 is 4 and is less than 5, the `num`. We set `low` to 5. When we run the while loop, it doesn't work because 5 is not greater than 5. Then, the line, `vals.add(low,new Integer(num));` gets called. Since the question is asking us for the value of low, the answer would be 5.
+For this question, I messed up with the steps. I ended up with 4 which was not the answer. I was writing all over the paper, which made it difficult to see the table. I will definitely keep it in mind to stay more organized. Anyway, after creating a table, our first step is to `compare vals.get(mid).intValue() < num` which is true since 4 is less than 5. Next, we run the code inside that conditional, which we set `low to mid + 1` which is 4. Then, we run the while loop again. This time, `high` is still greater than `low`, so we set `mid` to 5 and run the `if` condition again. Now, we run the next condition because the value of the ArrayList at index 5 is 8 which is bigger than 5, the `num`. That means `high` would be set to the value of 5. Afterwards, we run the while loop again which we have to set `mid` to 4 since (4 + 5) / 2 is 4 in integer form. Next, we run the `if` condition again which is true because the value at index 4 is 4 and is less than 5, the `num`. We set `low` to 5. When we run the while loop, it doesn't work because 5 is not greater than 5. Then, the line, `vals.add(low,new Integer(num));` gets called. Since the question is asking us for the value of `low`, the answer would be 5.
 
 ### Takeaways
 * trust your gut feeling
